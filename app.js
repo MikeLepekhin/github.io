@@ -10,10 +10,9 @@ db.addEventListener("click", function() {
   elem.parentNode.removeChild(elem);  
 });
 
-/*
+
 ab.addEventListener("click", function() {
   var nwText = document.getElementById('add_task_input').value;
   alert(nwText);
-  document.getElementById('root').innerHTML += '<ul><li class="bad_li"> <span>' + nwText + '</span></li></ul>');
+ // document.getElementById('root').innerHTML += '<ul><li class="bad_li"> <span>' + nwText + '</span></li></ul>');
 });
-*/
