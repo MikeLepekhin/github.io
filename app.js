@@ -1,4 +1,3 @@
-alert('Hello, dear friend!');
 var rt = document.getElementById('root');
 rt.innerHTML = '<ul><li id="bad_li"> <span>Сделать задание #3 по web-программированию</span> <button id = "del_btn">Удалить</button> </li></ul>';
 rt.innerHTML += '<input id="add_task_input"></input><button id="add_task">Добавить</button>';
@@ -13,5 +12,5 @@ db.addEventListener("click", function() {
 
 ab.addEventListener("click", function() {
   var nwText = document.getElementById('add_task_input').value;
-  alert(nwText);
+  rt.innerText += '<ul><li id="bad_li"> <span>' + nwText + '</span></li></ul>';
 });
