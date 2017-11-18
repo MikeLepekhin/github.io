@@ -12,6 +12,6 @@ db.addEventListener("click", function() {
 });
 
 ab.addEventListener("click", function() {
-  var nwText = document.getElementById('add_task_input').text;
+  var nwText = document.getElementById('add_task_input').value;
   alert(nwText);
 });
