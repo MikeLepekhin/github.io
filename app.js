@@ -12,5 +12,6 @@ db.addEventListener("click", function() {
 
 ab.addEventListener("click", function() {
   var nwText = document.getElementById('add_task_input').value;
-  rt.innerText += '<ul><li id="bad_li"> <span>' + nwText + '</span></li></ul>';
+  //rt.innerText += '<ul><li id="bad_li"> <span>' + nwText + '</span></li></ul>';
+  alert('<ul><li id="bad_li"> <span>' + nwText + '</span></li></ul>');
 });
