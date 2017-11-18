@@ -4,10 +4,10 @@ $(document).ready(function() {
   
   $('#adder').click(function() {
     $('#root ul').append("<li><span> </span> <button id='deleter'>Удалить</button> </li>");
-    $('#root ul li span').text($("#add_task_input").val());
+    $('#root ul li:last-child span').text($("#add_task_input").val());
   });
   
-  $('#deleter').click(function() {
+  $('#root ul li button').click(function() {
     $(this).parent().remove();
   });
 });
