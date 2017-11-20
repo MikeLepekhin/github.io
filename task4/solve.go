@@ -36,6 +36,7 @@ func DifferentWordsCount(s string) int {
           mp[curWord] = true
           result++
         }
+        curWord = ""
       }
       continue
     }
