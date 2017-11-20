@@ -14,7 +14,7 @@ func RemoveEven(nums []int) []int {
 }
 
 func PowerGenerator(num int) (func() int) {
-  cur := 1
+  cur := num
   return func() int {
     ret := cur
     cur *= num
