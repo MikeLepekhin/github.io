@@ -1,7 +1,7 @@
 package main
 
 import (
-    "ioutil"
+    "io/ioutil"
     "net/http"
     "encoding/json"
 )
@@ -21,8 +21,8 @@ func newLink() string {
     return res
 }
 
-func redirect(w http.ResponseWriter, r *http.Request, url string) {
-    result, ok := result[r.RequestURI[1:]]
+func redirect(w http.ResponseWriter, r *http.Request) {
+    url, ok := result[r.RequestURI[1:]]
     if !ok {
         http.NotFound(w, r)
         return
@@ -51,7 +51,7 @@ func shortenerHandler(w http.ResponseWriter, r *http.Request) {
 		}
 		http.Error(w, "", 400);
 	} else {
-		redirect(w, r, url)
+		redirect(w, r)
 	}
 
 }
